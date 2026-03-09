@@ -97,7 +97,7 @@ sequenceDiagram
 
 1.  **Clone the repository**
     ```bash
-    git clone git@github.com:gethsun1/autonomous-treasury-guardian.git
+    git clone git@github.com:Bratipah/ATG.git
     cd autonomous-treasury-guardian
     ```
 
