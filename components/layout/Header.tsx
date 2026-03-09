@@ -1,0 +1,51 @@
+'use client'
+
+import Link from 'next/link'
+import Image from 'next/image'
+import { usePathname } from 'next/navigation'
+import { cn } from '@/lib/utils'
+import ATGShield from '@/components/ATGShield'
+
+export function Header() {
+  const pathname = usePathname()
+  
+  const navItems = [
+    { name: 'Dashboard', href: '/dashboard' },
+    { name: 'Actions', href: '/actions' },
+    { name: 'Settings', href: '/settings' },
+  ]
+
+  return (
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-midnight-indigo/80 backdrop-blur-xl">
+      <div className="container flex h-16 items-center justify-between px-4 md:px-6">
+        <Link href="/" className="flex items-center space-x-2">
+          <div className="w-8 h-10 relative">
+             <ATGShield className="w-full h-full" />
+          </div>
+          <span className="text-xl font-bold tracking-tight text-frost-white font-display">
+            ATG <span className="text-electric-teal">Sentinel</span>
+          </span>
+        </Link>
+        
+        <nav className="hidden md:flex items-center gap-6">
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-electric-teal",
+                pathname === item.href ? "text-electric-teal" : "text-frost-white/70"
+              )}
+            >
+              {item.name}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="flex items-center gap-4">
+          <appkit-button />
+        </div>
+      </div>
+    </header>
+  )
+}
