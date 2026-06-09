@@ -49,7 +49,7 @@ export function TreasuryOverview() {
                   </div>
                   <div>
                     <p className="font-medium text-frost-white">{token.symbol}</p>
-                    <p className="text-xs text-frost-white/60">Avalanche</p>
+                    <p className="text-xs text-frost-white/60">Somnia</p>
                   </div>
                 </div>
                 <div className="text-right">

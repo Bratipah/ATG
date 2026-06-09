@@ -7,26 +7,26 @@ import MockSwapABI from './abis/MockSwap.json';
 
 export const contracts = {
   treasuryVault: {
-    address: (process.env.NEXT_PUBLIC_TREASURY_VAULT_ADDRESS as `0x${string}`) || "0x565435bAf0C6A9E06BE4e7F00fE08C95d36F247b",
+    address: (process.env.NEXT_PUBLIC_TREASURY_VAULT_ADDRESS as `0x${string}`) || "0x6935B8ADD1ad176b73370F45b603Df30a303EF02",
     abi: TreasuryVaultABI.abi,
   },
   actionExecutor: {
-    address: (process.env.NEXT_PUBLIC_ACTION_EXECUTOR_ADDRESS as `0x${string}`) || "0x4DabF129f9175a84D0E6caD48d14Be65bA5910F5",
+    address: (process.env.NEXT_PUBLIC_ACTION_EXECUTOR_ADDRESS as `0x${string}`) || "0x7fE17fCd269B07404062f42aCf6e1f131086C97F",
     abi: ActionExecutorABI.abi,
   },
   riskParameters: {
-    address: (process.env.NEXT_PUBLIC_RISK_PARAMETERS_ADDRESS as `0x${string}`) || "0xEC85cC46c6C514a6e05361f682c884d30d0cc9D3",
+    address: (process.env.NEXT_PUBLIC_RISK_PARAMETERS_ADDRESS as `0x${string}`) || "0x995BC7ddeDB7B869cEd9ef3698D0272e2d177A9C",
     abi: RiskParametersABI.abi,
   },
   agentAuth: {
-    address: (process.env.NEXT_PUBLIC_AGENT_AUTH_ADDRESS as `0x${string}`) || "0xf6Cd6D7Ee5f2F879A872f559Ef8Db39d73a69f8e", 
+    address: (process.env.NEXT_PUBLIC_AGENT_AUTH_ADDRESS as `0x${string}`) || "0xc2dFD5Cb92decB685787cEDC536046CBC251fe2A", 
     abi: AgentAuthABI.abi,
   },
   permissionManager: {
-    address: (process.env.NEXT_PUBLIC_PERMISSION_MANAGER_ADDRESS as `0x${string}`) || "0x3905052fB9d1502B246442945Eb1DC9573Be4708",
+    address: (process.env.NEXT_PUBLIC_PERMISSION_MANAGER_ADDRESS as `0x${string}`) || "0x3dBBd27D26d2AA3ed321A785C0513969f1fB23B8",
     abi: PermissionManagerABI.abi,
   },
-  mockSwap: {
+  mockSwap: {                                                           
     address: (process.env.NEXT_PUBLIC_MOCK_SWAP_ADDRESS as `0x${string}`) || "0x35A4E34953dC9720223607921891Fc67a857A84C",
     abi: MockSwapABI.abi,
   }

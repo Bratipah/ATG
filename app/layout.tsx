@@ -22,7 +22,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Autonomous Treasury Guardian",
-  description: "AI-powered treasury management on Avalanche",
+  description: "AI-powered treasury management on Somnia",
 };
 
 export default async function RootLayout({

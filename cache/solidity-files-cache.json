@@ -1,8 +1,8 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/home/quantum/Documents/GKM/ATG/atg/contracts/auth/AgentAuth.sol": {
-      "lastModificationDate": 1764765989364,
+    "/home/user/Documents/AI Agents/autonomous-treasury-guardian-main/contracts/auth/AgentAuth.sol": {
+      "lastModificationDate": 1771180376573,
       "contentHash": "a10bbd1d77db504b4896d7f1c108a986",
       "sourceName": "contracts/auth/AgentAuth.sol",
       "solcConfig": {
@@ -39,8 +39,8 @@
         "AgentAuth"
       ]
     },
-    "/home/quantum/Documents/GKM/ATG/atg/contracts/interfaces/IAgentAuth.sol": {
-      "lastModificationDate": 1764765989364,
+    "/home/user/Documents/AI Agents/autonomous-treasury-guardian-main/contracts/interfaces/IAgentAuth.sol": {
+      "lastModificationDate": 1771180376582,
       "contentHash": "8c46cf7f3672144c11c0ad97949a11b2",
       "sourceName": "contracts/interfaces/IAgentAuth.sol",
       "solcConfig": {
@@ -74,8 +74,8 @@
         "IAgentAuth"
       ]
     },
-    "/home/quantum/Documents/GKM/ATG/atg/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
-      "lastModificationDate": 1764765074204,
+    "/home/user/Documents/AI Agents/autonomous-treasury-guardian-main/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1780428077544,
       "contentHash": "5a20b2cad87ddb61c7a3a6af21289e28",
       "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
       "solcConfig": {
@@ -111,8 +111,8 @@
         "Ownable"
       ]
     },
-    "/home/quantum/Documents/GKM/ATG/atg/node_modules/@openzeppelin/contracts/utils/Context.sol": {
-      "lastModificationDate": 1764765074146,
+    "/home/user/Documents/AI Agents/autonomous-treasury-guardian-main/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1780428076832,
       "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
@@ -146,8 +146,8 @@
         "Context"
       ]
     },
-    "/home/quantum/Documents/GKM/ATG/atg/contracts/core/TreasuryVault.sol": {
-      "lastModificationDate": 1764864539508,
+    "/home/user/Documents/AI Agents/autonomous-treasury-guardian-main/contracts/core/TreasuryVault.sol": {
+      "lastModificationDate": 1771180376576,
       "contentHash": "313714ebd4f51e3c8e818e0469ed8929",
       "sourceName": "contracts/core/TreasuryVault.sol",
       "solcConfig": {
@@ -188,45 +188,8 @@
         "TreasuryVault"
       ]
     },
-    "/home/quantum/Documents/GKM/ATG/atg/contracts/core/RiskParameters.sol": {
-      "lastModificationDate": 1764765989364,
-      "contentHash": "aaecc874ce120e38cfa5e6e0d26acf06",
-      "sourceName": "contracts/core/RiskParameters.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/access/Ownable.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.17"
-      ],
-      "artifacts": [
-        "RiskParameters"
-      ]
-    },
-    "/home/quantum/Documents/GKM/ATG/atg/contracts/core/PermissionManager.sol": {
-      "lastModificationDate": 1764864539507,
+    "/home/user/Documents/AI Agents/autonomous-treasury-guardian-main/contracts/core/PermissionManager.sol": {
+      "lastModificationDate": 1771180376575,
       "contentHash": "5e5bd21fa7471c852696fdebb6c39580",
       "sourceName": "contracts/core/PermissionManager.sol",
       "solcConfig": {
@@ -262,8 +225,45 @@
         "PermissionManager"
       ]
     },
-    "/home/quantum/Documents/GKM/ATG/atg/node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol": {
-      "lastModificationDate": 1764765074206,
+    "/home/user/Documents/AI Agents/autonomous-treasury-guardian-main/contracts/core/RiskParameters.sol": {
+      "lastModificationDate": 1771180376575,
+      "contentHash": "aaecc874ce120e38cfa5e6e0d26acf06",
+      "sourceName": "contracts/core/RiskParameters.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "RiskParameters"
+      ]
+    },
+    "/home/user/Documents/AI Agents/autonomous-treasury-guardian-main/node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol": {
+      "lastModificationDate": 1780428077563,
       "contentHash": "1535f8c0c68463f8c1b5239f7584e71f",
       "sourceName": "@openzeppelin/contracts/security/ReentrancyGuard.sol",
       "solcConfig": {
@@ -297,8 +297,8 @@
         "ReentrancyGuard"
       ]
     },
-    "/home/quantum/Documents/GKM/ATG/atg/node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
-      "lastModificationDate": 1764765074210,
+    "/home/user/Documents/AI Agents/autonomous-treasury-guardian-main/node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
+      "lastModificationDate": 1780428077583,
       "contentHash": "1b5d667d3740d866eca0352758e59827",
       "sourceName": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
       "solcConfig": {
@@ -336,8 +336,8 @@
         "SafeERC20"
       ]
     },
-    "/home/quantum/Documents/GKM/ATG/atg/node_modules/@openzeppelin/contracts/utils/Address.sol": {
-      "lastModificationDate": 1764765074143,
+    "/home/user/Documents/AI Agents/autonomous-treasury-guardian-main/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1780428076753,
       "contentHash": "211ffd288c1588ba8c10eae668ca3c66",
       "sourceName": "@openzeppelin/contracts/utils/Address.sol",
       "solcConfig": {
@@ -371,8 +371,8 @@
         "Address"
       ]
     },
-    "/home/quantum/Documents/GKM/ATG/atg/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
-      "lastModificationDate": 1764765074186,
+    "/home/user/Documents/AI Agents/autonomous-treasury-guardian-main/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1780428077405,
       "contentHash": "df36f7051335cd1e748b1b6463b7fdd3",
       "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
       "solcConfig": {
@@ -406,8 +406,8 @@
         "IERC20"
       ]
     },
-    "/home/quantum/Documents/GKM/ATG/atg/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol": {
-      "lastModificationDate": 1764765074189,
+    "/home/user/Documents/AI Agents/autonomous-treasury-guardian-main/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol": {
+      "lastModificationDate": 1780428077417,
       "contentHash": "aa849939a4ae83a4dcb2dca9b3e9e707",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
       "solcConfig": {
@@ -441,8 +441,8 @@
         "IERC20Permit"
       ]
     },
-    "/home/quantum/Documents/GKM/ATG/atg/contracts/mocks/MockSwap.sol": {
-      "lastModificationDate": 1764765989368,
+    "/home/user/Documents/AI Agents/autonomous-treasury-guardian-main/contracts/mocks/MockSwap.sol": {
+      "lastModificationDate": 1771180376584,
       "contentHash": "092885688be05d73d68f5cf46b3c92ba",
       "sourceName": "contracts/mocks/MockSwap.sol",
       "solcConfig": {
@@ -478,8 +478,8 @@
         "MockSwap"
       ]
     },
-    "/home/quantum/Documents/GKM/ATG/atg/contracts/core/ActionExecutor.sol": {
-      "lastModificationDate": 1764864539508,
+    "/home/user/Documents/AI Agents/autonomous-treasury-guardian-main/contracts/core/ActionExecutor.sol": {
+      "lastModificationDate": 1771180376575,
       "contentHash": "27a8dc8af1f30068f8f5020cafb44857",
       "sourceName": "contracts/core/ActionExecutor.sol",
       "solcConfig": {
@@ -521,8 +521,8 @@
         "ActionExecutor"
       ]
     },
-    "/home/quantum/Documents/GKM/ATG/atg/contracts/interfaces/IERC8004.sol": {
-      "lastModificationDate": 1764765989364,
+    "/home/user/Documents/AI Agents/autonomous-treasury-guardian-main/contracts/interfaces/IERC8004.sol": {
+      "lastModificationDate": 1771180376583,
       "contentHash": "729d2088e675319b37d0e015e3891812",
       "sourceName": "contracts/interfaces/IERC8004.sol",
       "solcConfig": {
@@ -556,8 +556,8 @@
         "IERC8004"
       ]
     },
-    "/home/quantum/Documents/GKM/ATG/atg/contracts/mocks/MockERC8004.sol": {
-      "lastModificationDate": 1764864539512,
+    "/home/user/Documents/AI Agents/autonomous-treasury-guardian-main/contracts/mocks/MockERC8004.sol": {
+      "lastModificationDate": 1771180376583,
       "contentHash": "ecc41577dd7b0dfc38c216f8c9fe0b64",
       "sourceName": "contracts/mocks/MockERC8004.sol",
       "solcConfig": {

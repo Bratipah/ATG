@@ -46,7 +46,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(0,229,255,0.1)_0%,_rgba(139,92,246,0.05)_40%,_transparent_70%)] pointer-events-none -z-10" />
 
           <div className="container px-4 md:px-6 relative z-10">
-            <div className="flex flex-col items-center text-center space-y-10">
+            <div className="flex flex-col items-center text-center space-y-7">
               
               {/* Status Badge */}
               <motion.div 
@@ -56,7 +56,7 @@ export default function Home() {
                 className="inline-flex items-center rounded-full border border-electric-teal/30 bg-electric-teal/10 px-4 py-1.5 text-sm font-medium text-electric-teal backdrop-blur-sm"
               >
                 <span className="flex h-2 w-2 rounded-full bg-electric-teal mr-2 animate-pulse" />
-                Avalanche Testnet Live
+                Live on Testnet
               </motion.div>
               
               {/* Main Title */}
@@ -121,7 +121,7 @@ export default function Home() {
                     <ArrowRight className="h-5 w-5" />
                   </button>
                 </Link>
-                <Link href="https://github.com/gethsun1/autonomous-treasury-guardian/tree/main/contracts/core" target="_blank" rel="noopener noreferrer">
+                <Link href="https://github.com/Bratipah/ATG/tree/main/contracts/core" target="_blank" rel="noopener noreferrer">
                   <button className="btn-secondary w-full sm:w-auto text-lg px-8 py-4 border-white/20 hover:border-electric-teal/50 hover:shadow-[0_0_20px_rgba(0,224,199,0.1)]">
                     View Architecture
                   </button>

@@ -1,10 +1,10 @@
 import { createPublicClient, http, formatUnits } from 'viem';
-import { avalancheFuji } from 'viem/chains';
+import {  somniaTestnet } from 'viem/chains';
 import { contracts } from '@/lib/contracts';
 import { TOKENS } from '@/lib/tokens';
 
 const publicClient = createPublicClient({
-  chain: avalancheFuji,
+  chain: somniaTestnet,
   transport: http(),
 });
 
@@ -31,9 +31,10 @@ export async function getOnChainState(): Promise<OnChainState> {
   ]) as [bigint, bigint, bigint];
 
   // 2. Read Treasury Balances
-  const fujiTokens = TOKENS[avalancheFuji.id];
-  const avaxToken = fujiTokens.find(t => t.symbol === 'WAVAX')!;
+  const fujiTokens = TOKENS[somniaTestnet.id];
+  const avaxToken = fujiTokens.find(t => t.symbol === 'WSOMI')!;
   const usdcToken = fujiTokens.find(t => t.symbol === 'USDC')!;
+  // const usdtToken = fujiTokens.find(t => t.symbol === 'USDT')!;
 
   const [avaxBal, usdcBal] = await Promise.all([
     publicClient.readContract({ 

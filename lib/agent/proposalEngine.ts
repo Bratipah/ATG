@@ -1,7 +1,7 @@
 import { RiskAnalysis } from './riskEngine';
 import { ActionProposal } from './executor';
 import { createPublicClient, http, parseUnits, formatUnits } from 'viem';
-import { avalancheFuji } from 'viem/chains';
+import { avalancheFuji, somniaTestnet } from 'viem/chains';
 import { contracts } from '@/lib/contracts';
 import { TOKENS } from '@/lib/tokens';
 import { logActivity } from './telemetry';
@@ -21,8 +21,8 @@ export async function generateProposal(risk: RiskAnalysis): Promise<ActionPropos
   try {
     // We need to construct a REBALANCE proposal
     // 1. Get current balances to calculate delta
-    const fujiTokens = TOKENS[avalancheFuji.id];
-    const avaxToken = fujiTokens.find(t => t.symbol === 'WAVAX')!;
+    const fujiTokens = TOKENS[somniaTestnet.id];
+    const avaxToken = fujiTokens.find(t => t.symbol === 'WSOMI')!;
     const usdcToken = fujiTokens.find(t => t.symbol === 'USDC')!;
 
     const [avaxBal, usdcBal] = await Promise.all([
