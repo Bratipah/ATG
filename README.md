@@ -2,17 +2,17 @@
 
 ![Autonomous Treasury Guardian](public/atg.png)
 ![License](https://img.shields.io/badge/license-MIT-blue)
-![Network](https://img.shields.io/badge/network-Avalanche%20Fuji-red)
+![Network](https://img.shields.io/badge/network-Somnia%20Testnet-red)
 ![Status](https://img.shields.io/badge/status-Beta-orange)
 
-**Autonomous Treasury Guardian** is a decentralized, AI-powered treasury management system designed for DAOs and organizations on Avalanche. By bridging on-chain transparency with off-chain AI intelligence, ATG automates risk management, asset rebalancing, and operational payments, ensuring treasury health and sustainability without constant human intervention.
+**Autonomous Treasury Guardian** is a decentralized, AI-powered treasury management system designed for DAOs and organizations Somnia. By bridging on-chain transparency with off-chain AI intelligence, ATG automates risk management, asset rebalancing, and operational payments, ensuring treasury health and sustainability without constant human intervention.
 
 ## 🌟 Core Features
 
 ### 🤖 AI-Driven Autonomy
 - **Risk Engine**: Continuous, real-time monitoring of market volatility (via CoinGecko) and vault health.
 - **Narrative Reasoning**: Integrated LLM (Mistral/Zephyr-7B via HuggingFace) generates human-readable explanations for every risk assessment and proposal.
-- **Automated Proposals**: The AI agent proactively proposes rebalances (e.g., AVAX/USDC swaps) when risk thresholds are breached or portfolio allocation drifts.
+- **Automated Proposals**: The AI agent proactively proposes rebalances (e.g., WSOMI/USDC swaps) when risk thresholds are breached or portfolio allocation drifts.
 - **Agent API**: Dedicated Next.js API routes (`/api/agent/*`) for on-demand risk evaluation and on-chain action triggering.
 - **Intelligent Execution**: Secure server-side signer (Viem) automatically submits proposals to the `ActionExecutor` contract.
 - **Autonomous Scheduling**: Vercel Cron integration ensures the agent runs checks every 10 minutes without manual triggers.
@@ -23,7 +23,7 @@
 - **Guardian Controls**: Emergency system pause/unpause and instant role revocation capabilities.
 
 ### 🏛️ Treasury Dashboard
-- **Real-Time Monitoring**: Live visualization of treasury balances (AVAX, USDC) fetched from on-chain and priced via CoinGecko.
+- **Real-Time Monitoring**: Live visualization of treasury balances (WSOMI, USDC) fetched from on-chain and priced via CoinGecko.
 - **Live Risk Gauge**: Dynamic risk scoring based on real-time market volatility and on-chain parameters.
 - **Activity Feed**: Immutable, transparent log of all agent proposals, executed actions, and AI narratives/telemetry.
 - **Interactive Settings**: Intuitive UI for managing risk configurations and assigning system roles.
@@ -61,7 +61,7 @@ sequenceDiagram
     participant Risk as Risk Engine
     participant LLM as HuggingFace LLM
     participant Exec as Agent Executor
-    participant Chain as Avalanche Contracts
+    participant Chain as Somnia Contracts
 
     User->>API: POST /agent/propose (Cron or Manual)
     API->>Agent: runAgentCycle()
@@ -75,23 +75,23 @@ sequenceDiagram
     Chain-->>API: Tx Receipt + Events
 ```
 
-## 🚀 Deployed Contracts (Avalanche Fuji)
+## 🚀 Deployed Contracts (Somnia testnet)
 
 | Contract | Address |
 |----------|---------|
-| **TreasuryVault** | `0x565435bAf0C6A9E06BE4e7F00fE08C95d36F247b` |
-| **ActionExecutor** | `0x4DabF129f9175a84D0E6caD48d14Be65bA5910F5` |
-| **RiskParameters** | `0xEC85cC46c6C514a6e05361f682c884d30d0cc9D3` |
-| **PermissionManager** | `0x3905052fB9d1502B246442945Eb1DC9573Be4708` |
-| **AgentAuth** | `0xf6Cd6D7Ee5f2F879A872f559Ef8Db39d73a69f8e` |
-| **MockSwap** | `0x35A4E34953dC9720223607921891Fc67a857A84C` |
+| **TreasuryVault** | `0x6935B8ADD1ad176b73370F45b603Df30a303EF02` |
+| **ActionExecutor** | `0x7fE17fCd269B07404062f42aCf6e1f131086C97F` |
+| **RiskParameters** | `0x995BC7ddeDB7B869cEd9ef3698D0272e2d177A9C` |
+| **PermissionManager** | `0x3dBBd27D26d2AA3ed321A785C0513969f1fB23B8` |
+| **AgentAuth** | `0xc2dFD5Cb92decB685787cEDC536046CBC251fe2A` |
+| **MockSwap** | `0x936F59DA9c4E8961E128771FCCF4c015A9256911` |
 
 ## 🛠️ Getting Started
 
 ### Prerequisites
 - Node.js 20+
 - pnpm or npm
-- An Avalanche Fuji wallet with funds
+- An Somnia Testnet wallet with funds
 
 ### Installation
 
@@ -114,11 +114,11 @@ sequenceDiagram
     NEXT_PUBLIC_RPC_URL=https://api.avax-test.network/ext/bc/C/rpc
     
     # Contract Addresses (Already configured in lib/contracts.ts defaults)
-    NEXT_PUBLIC_TREASURY_VAULT_ADDRESS=0x565435bAf0C6A9E06BE4e7F00fE08C95d36F247b
-    NEXT_PUBLIC_ACTION_EXECUTOR_ADDRESS=0x4DabF129f9175a84D0E6caD48d14Be65bA5910F5
-    NEXT_PUBLIC_RISK_PARAMETERS_ADDRESS=0xEC85cC46c6C514a6e05361f682c884d30d0cc9D3
-    NEXT_PUBLIC_PERMISSION_MANAGER_ADDRESS=0x3905052fB9d1502B246442945Eb1DC9573Be4708
-    NEXT_PUBLIC_AGENT_AUTH_ADDRESS=0xf6Cd6D7Ee5f2F879A872f559Ef8Db39d73a69f8e
+    NEXT_PUBLIC_TREASURY_VAULT_ADDRESS=0x6935B8ADD1ad176b73370F45b603Df30a303EF02
+    NEXT_PUBLIC_ACTION_EXECUTOR_ADDRESS=0x7fE17fCd269B07404062f42aCf6e1f131086C97F
+    NEXT_PUBLIC_RISK_PARAMETERS_ADDRESS=0x995BC7ddeDB7B869cEd9ef3698D0272e2d177A9C
+    NEXT_PUBLIC_PERMISSION_MANAGER_ADDRESS=0x3dBBd27D26d2AA3ed321A785C0513969f1fB23B8
+    NEXT_PUBLIC_AGENT_AUTH_ADDRESS=0xc2dFD5Cb92decB685787cEDC536046CBC251fe2A
     
     # Agent Configuration (Backend)
     AGENT_PRIVATE_KEY=0x... # Private key for the server-side agent wallet
@@ -165,5 +165,5 @@ If a risk is detected, the agent will generate a narrative explanation and propo
 
 ---
 
-Built with ❤️ on Avalanche.
+Built with ❤️ on Somnia.
 # ATG
